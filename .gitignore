@@ -7,6 +7,7 @@
 !/Packages/
 !/Screenshots/
 !*.unitypackage
+!README.md
 
 *.blend1
 *.blend1.meta
