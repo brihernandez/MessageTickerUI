@@ -1,0 +1,12 @@
+/*
+/*/
+
+!.gitignore
+!/Assets/
+!/ProjectSettings/
+!/Packages/
+!/Screenshots/
+!*.unitypackage
+
+*.blend1
+*.blend1.meta
