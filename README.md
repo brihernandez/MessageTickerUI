@@ -1,12 +1,12 @@
 
-# Message Ticker UI v1.0
+# Message Ticker UI v1.1
 This is a very simple little UI element for displaying text in a live scrolling little window similar to a console window. I created this for [the prototype of the Arena game](https://www.youtube.com/watch?v=2f8a_a6mVxE) and noticed that it was very self-contained and should be easy add to other projects. I can see myself re-using this in the future, so I figured I'd make an easy to import package out of it.
 
 It's meant to be a very straightforward and simple package so that it can be easily dropped into any project and customized with new features from there.
 
 ![screenshot](Screenshots/console.gif)
 
-This project was built in **Unity 2017.3.1f1**
+This project was built in **Unity 2017.4.30f1**
 
 ## Download
 You can either clone the repository or [download the asset package](https://github.com/brihernandez/MessageTickerUI/raw/master/MessageTickerUI.unitypackage) located in the root.
@@ -28,7 +28,14 @@ Keep in mind is that only one Ticker is supported at a time. If multiple tickers
 3. Call `Ticker.AddItem(text)` to create a message on the ticker.
     - Alternatively, `Ticker.AddItem(text, lifespan, color)` can be used to customize the message.
 
+If you run the demo scene, press the `S` key to trigger random messages.
+
 # Changelog
+
+### 1.1 (July 29 2019)
+
+- Fixed bug where ticker item color could be incorrect when fading out
+- Updated project to 2017.4.30f1 LTS
 
 ### 1.0 (May 14 2019)
 

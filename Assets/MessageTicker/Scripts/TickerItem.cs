@@ -21,6 +21,9 @@ namespace Ticker
 
         private void Awake()
         {
+            if(tickerText != null)
+                SetColor(tickerText.color);
+
             if (tickerText == null)
                 Debug.LogError("TickerItem - Missing reference to text component!");
         }
@@ -36,7 +39,7 @@ namespace Ticker
                 float fadeValue = (fadeTime - timeToLive) / fadeTime;
                 fadeValue = Mathf.Clamp01(fadeValue);
                 tickerText.color = Color.Lerp(fullColor,
-                                              new Color(fullColor.r, fullColor.g, fullColor.b, 0f), 
+                                              new Color(fullColor.r, fullColor.g, fullColor.b, 0f),
                                               fadeValue);
 
                 if (timeToLive <= 0f)
